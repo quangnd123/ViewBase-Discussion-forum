@@ -89,8 +89,7 @@ async function onDisconnect() {
   logout();
 }
 
-//I expect when metamask is manually disconnected, the app automatically logout but it does'nt work that way.
-//Even https://metafora.app/ has the same problem.
+//I expect when there is any changes, the app automatically logout but it does'nt work that way.
 function subscribe() {
   // Subscribe to accounts change
   provider.on("accountsChanged", (accounts) => {
